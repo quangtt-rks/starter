@@ -1690,6 +1690,10 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
   }
 }
 
+
+.post .post-content figure.image {
+  text-align: center;
+}
 .post .post-content figcaption {
   font-size: 16px;
   font-weight: 400;
