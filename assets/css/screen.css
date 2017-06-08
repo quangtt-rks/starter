@@ -1689,3 +1689,20 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
     text-align: right;
   }
 }
+
+.post .post-content figcaption {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.3;
+
+  z-index: 300;
+
+  max-width: 800px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  color: #666665;
+  outline: 0;
+}
