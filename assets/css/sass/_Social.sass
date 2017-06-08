@@ -1,0 +1,62 @@
+
+// Social
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.social-navigation
+  ul
+    display: flex
+    flex-wrap: wrap
+    justify-content: left
+
+  li
+    margin: 0
+    list-style: none
+    &:not(:last-child)
+      margin-right: 0.8rem
+
+  a
+    display: inline-block
+    width: 3.2rem
+    height: 3.2rem
+    font-size: 0
+    background-color: rgba(0,0,0,.16)
+    border-radius: 50%
+
+    &:before
+      display: block
+      color: #FFF
+      font-family: 'icons'
+      font-size: 1.6rem
+      text-align: center
+      line-height: 3.2rem
+      -webkit-font-smoothing: antialiased
+
+    &[href*="google.com"]
+      &:before
+        content: "\e900"
+      &:hover
+        background-color: $color-google-plus
+
+    &[href*="facebook.com"]
+      &:before
+        content: "\e901"
+      &:hover
+        background-color: $color-facebook
+
+    &[href*="instagram.com"]
+      &:before
+        content: "\ea92"
+      &:hover
+        background-color: $color-instagram
+
+    &[href*="twitter.com"]
+      &:before
+        content: "\e904"
+      &:hover
+        background-color: $color-twitter
+
+    &[href*="rss"]
+      &:before
+        content: "\e905"
+      &:hover
+        background-color: $color-rss

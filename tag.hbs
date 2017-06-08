@@ -1,0 +1,29 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The main content area on the homepage }}
+<main class="site-main wow fadeIn" data-wow-duration=".8s" role="main">
+
+  {{! Everything inside the #tag tags pulls data from the tag }}
+  {{#tag}}
+
+    <section class="site-hero {{#if image}}" style="background-image: url({{image}}){{else}}site-hero-no-cover{{/if}}">
+      <header class="site-hero-header">
+        <h2 class="site-hero-title">{{name}}</h2>
+        <p class="site-hero-description">
+          {{#if description}}
+            {{description}}
+          {{else}}
+            A {{../pagination.total}}-post collection
+          {{/if}}
+        </p>
+      </header>
+      <div class="overlay"></div>
+    </section>
+
+  {{/tag}}
+
+  {{! The tag below includes the post loop - partials/loop-alt.hbs }}
+  {{> "loop"}}
+
+</main>

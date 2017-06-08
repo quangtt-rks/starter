@@ -1,0 +1,39 @@
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+  <article class="{{post_class}} wow fadeIn" data-wow-duration=".8s">
+
+    <header class="post-header">
+      {{#if featured}}
+        <div class="post-header-featured">
+          <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+
+          <div class="featured-label">
+            <span class="icon-featured"></span>
+          </div>
+        </div>
+      {{else}}
+        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+      {{/if}}
+      <p class="post-meta">
+        <time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="MMMM DD, YYYY"}}</time>
+        {{tags prefix="in "}}
+      </p>
+      {{#if image}}
+        <section class="featured-image">
+          <a href="{{url}}">
+            <img src="{{image}}" alt="{{title}}">
+          </a>
+        </section>
+      {{/if}}
+    </header>
+
+    <section class="post-content">
+      <p>{{excerpt words="86"}}</p>
+      <p><a href="{{url}}" class="more-link">Read more</a></p>
+    </section>
+
+  </article>
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}

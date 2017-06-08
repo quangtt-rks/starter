@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{! Document Settings }}
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- {{! Page Meta }} -->
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+  <!-- {{! Styles'n'Scripts }} -->
+  <link rel="stylesheet" type="text/css" href="{{asset "css/min/screen.min.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/min/animate.min.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/min/pace.min.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "fonts/icons/icons.css"}}" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+
+  {{! Ghost outputs important style and meta data with this tag }}
+  {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+  <div class="container">
+
+    {{> "header"}}
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    {{> "footer"}}
+
+  </div>
+
+  {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  {{! Ghost outputs important scripts and data with this tag }}
+  {{ghost_foot}}
+
+  <script type="text/javascript" src="{{asset "js/min/jquery.fitvids.min.js"}}"></script>
+  <script type="text/javascript" src="{{asset "js/min/pace.min.js"}}"></script>
+  <script type="text/javascript" src="{{asset "js/min/wow.min.js"}}"></script>
+  {{! The main JavaScript file for Blacklist }}
+  <script type="text/javascript" src="{{asset "js/min/index.min.js"}}"></script>
+
+  {{#is "post"}}
+    <script type="text/javascript">
+      if ( typeof disqus_shortname !== 'undefined' ) {
+        /* --- Don't edit below this line --- */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      } else {
+        $(".post-comments").remove();
+      }
+    </script>
+  {{/is}}
+
+</body>
+</html>

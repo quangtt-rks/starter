@@ -1,0 +1,228 @@
+
+// Variables
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$color-accent: #0081EF
+$color-border: #E9EBED
+$color-highlight: #FFF198
+$color-primary: #66727D
+$color-secondary: #F6F7F7
+$color-text: #283037
+$color-text-light: #66727D
+
+// Social Media
+$color-twitter: #55ACEE
+$color-facebook: #3B5998
+$color-google-plus: #DC4E41
+$color-instagram: #3F729B
+$color-rss: #F26522
+
+// Sass Modules
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@import Base
+@import Breakpoint
+@import Utility
+@import Blockquote
+@import Code
+@import Footer
+@import Form
+@import Grid
+@import Image
+@import Link
+@import List
+@import Misc
+@import Navigation
+@import Pagination
+@import Scroll
+@import Share
+@import Social
+@import Spacing
+@import Table
+@import Typography
+@import Widget
+
+// Site header
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.site-header
+  margin: 6rem 0 4rem
+  border-bottom: 1px solid $color-border
+  +clearfix
+
+  +medium
+    margin: 4rem 0 6rem
+
+.site-title
+  font-size: 2.4rem
+
+// Site main
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.site-main
+  width: 100%
+  max-width: 80rem
+  margin: 0 auto
+
+// Site hero
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.site-hero
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 14rem
+  margin-bottom: 6rem
+  color: #FFF
+  border-radius: 5px
+  overflow: hidden
+  +cover
+
+.site-hero-header
+  z-index: 20
+  padding: 2rem
+  text-align: center
+
+  .author-image
+    display: inline-block
+    margin-bottom: 1rem
+
+.site-hero-title,
+.site-hero-description
+  margin-bottom: 0
+  color: inherit
+
+.site-hero-meta
+  margin-top: 2rem
+
+  p
+    margin-bottom: 1rem
+    &:not(:last-child)
+      margin-right: 1rem
+
+  +medium
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    span
+      margin-right: 0.4rem
+
+  .author-link a
+    color: #FFF
+    font-weight: 400
+
+    &:hover
+      text-decoration: underline
+
+.site-hero-no-cover
+  color: $color-text-light
+  background-color: $color-secondary
+  border: 1px solid $color-border
+
+  .site-hero-title
+    color: $color-text
+
+  .author-link a
+    color: $color-text-light
+
+  .overlay
+    display: none
+    visibility: hidden
+
+// Post
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.post
+  margin-bottom: 4rem
+  padding-bottom: 2rem
+  border-bottom: 1px solid $color-border
+
+  +medium
+    margin-bottom: 6rem
+
+.post-meta
+  color: $color-text-light
+
+.post-author
+  margin-bottom: 6rem
+  padding: 3rem
+  background-color: $color-secondary
+  border: 1px solid $color-border
+  border-radius: 5px
+  +clearfix
+
+  h4
+    font-size: 2.2rem
+
+  p
+    margin-bottom: 0
+
+  .author-image
+    float: left
+    margin-right: 3rem
+
+  .author-data
+    overflow: hidden
+
+// Author
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.author-image
+  display: block
+  font-size: 0
+  +avatar(8rem, 8rem)
+
+// Featured
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.post-header-featured
+  display: flex
+  justify-content: space-between
+
+  .post-title
+    max-width: 88%
+
+  .featured-label
+    width: 3rem
+    height: 3rem
+    margin-top: 1rem
+    color: #FFF
+    line-height: 3rem
+    text-align: center
+    background-color: $color-accent
+    border-radius: 50%
+
+// Featured image
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.featured-image
+  margin-bottom: 4rem
+
+// Next story
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.post-comments
+  margin-bottom: 4rem
+
+  +medium
+    margin-bottom: 6rem
+
+// Next story
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.read-next-story
+  margin-bottom: 4rem
+
+  p
+    margin-bottom: 1rem
+
+  h3
+    font-size: 2.6rem
+
+  +medium
+    margin-bottom: 6rem
+
+    .prev
+      text-align: right

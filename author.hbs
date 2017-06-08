@@ -1,0 +1,38 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The main content area on the homepage }}
+<main class="site-main wow fadeIn" data-wow-duration=".8s" role="main">
+
+  {{! Everything inside the #author tags pulls data from the author }}
+  {{#author}}
+
+    <section class="site-hero {{#if cover}}" style="background-image: url({{cover}}){{else}}site-hero-no-cover{{/if}}">
+      <header class="site-hero-header">
+        {{#if image}}
+          <div class="author-image" style="background-image: url({{image}})">{{name}}'s Picture</div>
+        {{/if}}
+        <h2 class="site-hero-title">{{name}}</h2>
+        {{#if bio}}
+          <p class="site-hero-description">{{bio}}</p>
+        {{/if}}
+
+        <div class="site-hero-meta">
+          {{#if website}}
+            <p class="author-link"><span class="icon-website"></span><a href="{{website}}">{{website}}</a></p>
+          {{/if}}
+          {{#if location}}
+            <p class="author-location"><span class="icon-location"></span>{{location}}</p>
+          {{/if}}
+          <p class="author-stats"><span class="icon-posts"></span>{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</p>
+        </div>
+
+      </header>
+      <div class="overlay"></div>
+    </section>
+
+  {{/author}}
+
+  {{! The tag below includes the post loop - partials/loop-alt.hbs }}
+  {{> "loop"}}
+</main>

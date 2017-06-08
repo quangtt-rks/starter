@@ -1,0 +1,29 @@
+{{!< default}}
+{{! This is a page template. A page outputs content just like any other post, and has all the same attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! The main content area on the homepage }}
+<main class="site-main wow fadeIn" data-wow-duration=".8s" role="main">
+
+  {{! Everything inside the #post tags pulls data from the page }}
+  {{#post}}
+
+    <article class="{{post_class}}">
+      <header class="entry-header">
+
+        <h1 class="entry-title">{{title}}</h1>
+
+        {{#if image}}
+          <section class="featured-image">
+            <img src="{{image}}" alt="{{title}}">
+          </section>
+        {{/if}}
+
+      </header>
+
+      <section class="entry-content">
+        {{content}}
+      </section>
+    </article>
+
+  {{/post}}
+</main>

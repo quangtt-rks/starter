@@ -1,0 +1,53 @@
+
+// Utility
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Float either direction
+.float-right
+  float: right
+
+.float-left
+  float: left
+
+// Clear a float with .clearfix
+=clearfix
+  *zoom: 1
+
+  &:after,
+  &:before
+    content: ''
+    display: table
+
+  &:after
+    clear: both
+
+// Avatar
+=avatar($width, $height)
+  width: $width
+  height: $height
+  +cover
+  border-radius: 50%
+
+// Background cover
+=cover
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+// Overlay
+=overlay
+  z-index: 10
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+
+.overlay
+  +overlay
+  background-color: rgba(0,129,239,0.6)
+
+.hidden
+  text-indent: -9999px
+  visibility: hidden
+  display: none

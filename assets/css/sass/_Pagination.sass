@@ -1,0 +1,65 @@
+
+// Pagination
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.pagination
+  width: 100%
+  margin: 0 auto 4rem auto
+
+  +medium
+    max-width: 80rem
+    margin-bottom: 6rem
+    +clearfix
+
+    p
+      float: left
+
+    ul
+      float: right
+
+  .page-number
+    // display: block
+    color: $color-text-light
+
+  ul
+    margin: 0
+    +clearfix
+
+  .prev
+    float: left
+
+  .next
+    float: right
+
+  li
+    list-style-type: none
+
+    &:not(:last-child)
+      margin-right: 3rem
+
+    &.prev:hover:before
+      left: -1rem
+
+    &.next:hover:after
+      right: -1rem
+
+  a
+    color: $color-text
+
+    &:hover
+      color: $color-text-light
+
+  .prev:before,
+  .next:after
+    position: relative
+    transition: all .35s
+
+  .prev:before
+    content: '←'
+    position: relative
+    left: -.5rem
+
+  .next:after
+    content: '→'
+    position: relative
+    right: -.5rem

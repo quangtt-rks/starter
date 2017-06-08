@@ -1,0 +1,190 @@
+
+// Navigation
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.navigation-toggle-container
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 4.4rem
+  z-index: 1000
+  text-align: center
+  cursor: pointer
+  background-color: rgba(255,255,255,.97)
+  border-bottom: 1px solid $color-border
+  transition: background-color .25s ease
+
+  &.active
+    .top
+      transform: translateY(5px) translateX(0) rotate(-45deg)
+
+    .middle
+      opacity: 0
+
+    .bottom
+      transform: translateY(-5px) translateX(0) rotate(45deg)
+
+    .navigation-toggle:after
+      content: 'CLOSE'
+
+.navigation-toggle
+  line-height: 4.4rem
+
+  &:after
+    content: 'MENU'
+    font-size: 1.6rem
+    transition: all .25s ease
+
+.toggle-icon
+  display: inline-block
+  margin-right: .3rem
+
+  span
+    display: block
+    width: 1.8rem
+    height: 2px
+    background-color: $color-primary
+    transition: all .25s ease
+
+    &:not(:last-child)
+      margin-bottom: .3rem
+
+.site-navigation-overlay
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 900
+  width: 100%
+  height: 100%
+  opacity: .97
+  visibility: hidden
+  transition: opacity .35s, visibility .35s, width .35s
+
+  &:before, &:after
+    position: fixed
+    content: ''
+    background: #FFF
+    top: 0
+    width: 50%
+    height: 100%
+    transition: all .35s ease
+
+  &:before
+    left: -55%
+
+  &:after
+    right: -55%
+
+  &.open
+    visibility: visible
+    overflow-y: scroll
+
+    &:before
+      left: 0
+
+    &:after
+      right: 0
+
+    li
+      animation: fadeInTop .5s ease forwards
+      animation-delay: .35s
+      &:nth-of-type(2)
+        animation-delay: .45s
+      &:nth-of-type(3)
+        animation-delay: .55s
+      &:nth-of-type(4)
+        animation-delay: .65s
+      &:nth-of-type(5)
+        animation-delay: .75s
+      &:nth-of-type(6)
+        animation-delay: .85s
+      &:nth-of-type(7)
+        animation-delay: .95s
+      &:nth-of-type(8)
+        animation-delay: .105s
+
+.site-navigation
+  position: relative
+  top: 20%
+  z-index: 950
+
+  ul
+    font-size: 3.6rem
+    font-family: 'Source Sans Pro', sans-serif
+    font-weight: 700
+    text-align: center
+
+  li
+    margin-bottom: 4rem
+    opacity: 0
+    list-style: none
+
+  a
+    display: block
+    color: $color-text-light
+
+    &:hover
+      color: $color-accent
+
+.nav-current a
+  color: $color-text
+
+.no-scroll
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  overflow: hidden
+  -webkit-overflow-scrolling: touch
+
+@keyframes fadeInTop
+  0%
+    top: 20%
+    opacity: 0
+  100%
+    top: 0
+    opacity: 1
+
++medium
+  .navigation-toggle-container
+    display: none
+
+  .site-navigation-overlay
+    position: relative
+    z-index: 0
+    opacity: 1
+    visibility: visible
+    transition: none
+
+    &:before, &:after
+      display: none
+
+  .site-navigation
+    top: 0
+    z-index: 0
+
+    ul
+      +clearfix
+      top: 0
+      z-index: 0
+      font-size: 1.4rem
+      font-weight: 400
+      text-align: left
+
+    li
+      float: left
+      margin-bottom: 1rem
+      opacity: 1
+
+      &:not(:last-child)
+        margin-right: 4rem
+
+    a
+      display: inline-block
+      color: $color-text-light
+      font-size: 1.4rem
+
+  .nav-current a
+    position: relative
+    color: $color-text

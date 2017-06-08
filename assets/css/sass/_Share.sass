@@ -1,0 +1,34 @@
+
+// Share
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.widget-share
+  display: flex
+
+.share-item
+  position: relative
+  flex-grow: 1
+  border-top: 1px solid $color-border
+  border-bottom: 1px solid $color-border
+  &:not(:last-child)
+    border-right: 1px solid $color-border
+  a
+    display: block
+    padding: 1.4rem 0 0.8rem 0
+    color: $color-text-light
+    text-align: center
+    transition: background-color 0.3s, color 0s
+    &:hover
+      color: #FFF
+
+  &.twitter:hover a
+    background-color: $color-twitter
+
+  &.facebook:hover a
+    background-color: $color-facebook
+
+  &.google-plus
+    span
+      font-size: 1.8rem
+    &:hover a
+      background-color: $color-google-plus

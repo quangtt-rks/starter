@@ -1,0 +1,28 @@
+<div class="navigation-toggle-container" id="toggle">
+  <div class="navigation-toggle">
+    <div class="toggle-icon">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+  </div>
+</div>
+
+<div class="site-navigation-overlay" id="overlay">
+  <nav class="site-navigation">
+    <ul>
+      {{#foreach navigation}}
+        <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation">
+          <a href="{{url absolute="true"}}">{{label}}</a>
+        </li>
+      {{/foreach}}
+        <li>
+          {{#if @labs.subscribers}}
+            <a class="subscribe" href="{{@blog.url}}/subscribe/">Subscribe</a>
+          {{else}}
+            <a class="subscribe" href="{{@blog.url}}/rss/" target="_blank">Subscribe</a>
+          {{/if}}
+        </li>
+    </ul>
+  </nav>
+</div>
