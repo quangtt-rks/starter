@@ -18,10 +18,10 @@
         <time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="MMMM DD, YYYY"}}</time>
         {{tags prefix="in "}}
       </p>
-      {{#if image}}
+      {{#if feature_image}}
         <section class="featured-image">
           <a href="{{url}}">
-            <img src="{{image}}" alt="{{title}}">
+            <img src="{{img_url feature_image}}" alt="{{title}}">
           </a>
         </section>
       {{/if}}

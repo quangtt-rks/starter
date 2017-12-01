@@ -7,10 +7,10 @@
   {{! Everything inside the #author tags pulls data from the author }}
   {{#author}}
 
-    <section class="site-hero {{#if cover}}" style="background-image: url({{cover}}){{else}}site-hero-no-cover{{/if}}">
+    <section class="site-hero {{#if cover_image}}" style="background-image: url({{cover_image}}){{else}}site-hero-no-cover{{/if}}">
       <header class="site-hero-header">
-        {{#if image}}
-          <div class="author-image" style="background-image: url({{image}})">{{name}}'s Picture</div>
+        {{#if feature_image}}
+          <div class="author-image" style="background-image: url({{img_url feature_image}})">{{name}}'s Picture</div>
         {{/if}}
         <h2 class="site-hero-title">{{name}}</h2>
         {{#if bio}}

@@ -82,3 +82,5 @@ $(".post-content img").each(function() {
     );
   }
 });
+
+var disqus_shortname = 'quangtt';

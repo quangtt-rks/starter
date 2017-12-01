@@ -13,9 +13,9 @@
           <time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="MMMM DD, YYYY"}}</time>
           {{tags prefix="in "}}
         </p>
-        {{#if image}}
+        {{#if feature_image}}
           <section class="featured-image">
-            <img src="{{image}}" alt="{{title}}">
+            <img src="{{img_url feature_image}}" alt="{{title}}">
           </section>
         {{/if}}
       </header>
@@ -54,8 +54,8 @@
     {{!-- Everything inside the #author tags pulls data from the author --}}
     {{#author}}
       <section class="post-author">
-        {{#if image}}
-          <a class="author-image" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+        {{#if profile_image}}
+          <a class="author-image" href="{{url}}" style="background-image: url({{img_url profile_image}})"><span class="hidden">{{name}}'s Picture</span></a>
         {{/if}}
 
         <div class="author-data">

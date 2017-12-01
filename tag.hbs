@@ -7,7 +7,7 @@
   {{! Everything inside the #tag tags pulls data from the tag }}
   {{#tag}}
 
-    <section class="site-hero {{#if image}}" style="background-image: url({{image}}){{else}}site-hero-no-cover{{/if}}">
+    <section class="site-hero {{#if feature_image}}" style="background-image: url({{img_url feature_image}}){{else}}site-hero-no-cover{{/if}}">
       <header class="site-hero-header">
         <h2 class="site-hero-title">{{name}}</h2>
         <p class="site-hero-description">
