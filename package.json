@@ -7,7 +7,7 @@
     "url": "https://byfortress.com"
   },
   "config": {
-    "posts_per_page": 5
+    "posts_per_page": 8
   },
   "devDependencies": {
     "del": "^0.1.1",
