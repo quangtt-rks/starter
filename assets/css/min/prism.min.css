@@ -1,1 +1,123 @@
-code[class*='language-'],pre[class*='language-']{font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;line-height:1.5;text-align:left;white-space:pre;word-spacing:normal;word-wrap:normal;word-break:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;color:black;background:none;-ms-hyphens:none}pre[class*='language-']{position:relative;overflow:visible;margin:.5em 0;padding:0;border-left:2px solid #358ccb;background-color:#fdfdfd;background-image:-webkit-linear-gradient(transparent 50%, rgba(69, 142, 209, .04) 50%);background-image:-moz-linear-gradient(transparent 50%, rgba(69, 142, 209, .04) 50%);background-image:-ms-linear-gradient(transparent 50%, rgba(69, 142, 209, .04) 50%);background-image:-o-linear-gradient(transparent 50%, rgba(69, 142, 209, .04) 50%);background-image:linear-gradient(transparent 50%, rgba(69, 142, 209, .04) 50%);background-origin:content-box;background-size:3em 3em}code[class*='language']{display:block;overflow:auto;height:100%;max-height:inherit;padding:0 1em}:not(pre) > code[class*='language-'],pre[class*='language-']{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-bottom:1em;background-color:#fdfdfd}:not(pre) > code[class*='language-']{position:relative;display:inline;padding:.2em;white-space:normal;color:#c92c2c;border:1px solid rgba(0, 0, 0, .1);-webkit-border-radius:.3em;-moz-border-radius:.3em;border-radius:.3em;-ms-border-radius:.3em;-o-border-radius:.3em}pre[class*='language-']:before,pre[class*='language-']:after{position:absolute;z-index:-2;bottom:.75em;left:.18em;display:block;width:40%;height:20%;max-height:13em;content:''}:not(pre) > code[class*='language-']:after,pre[class*='language-']:after{right:.75em;left:auto;-webkit-transform:rotate(2deg);-moz-transform:rotate(2deg);-ms-transform:rotate(2deg);-o-transform:rotate(2deg);transform:rotate(2deg)}.token.comment,.token.block-comment,.token.prolog,.token.doctype,.token.cdata{color:#7d8b99}.token.punctuation{color:#5f6364}.token.property,.token.tag,.token.boolean,.token.number,.token.function-name,.token.constant,.token.symbol,.token.deleted{color:#c92c2c}.token.selector,.token.attr-name,.token.string,.token.char,.token.function,.token.builtin,.token.inserted{color:#2f9c0a}.token.operator,.token.entity,.token.url,.token.variable{color:#a67f59;background:rgba(255, 255, 255, .5)}.token.atrule,.token.attr-value,.token.keyword,.token.class-name{color:#1990b8}.token.regex,.token.important{color:#e90}.language-css .token.string,.style .token.string{color:#a67f59;background:rgba(255, 255, 255, .5)}.token.important{font-weight:normal}.token.bold{font-weight:bold}.token.italic{font-style:italic}.token.entity{cursor:help}.namespace{opacity:.7}@media screen and (max-width: 767px){pre[class*='language-']:before,pre[class*='language-']:after{bottom:14px;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}}.token.tab:not(:empty):before,.token.cr:before,.token.lf:before{color:#e0d7d1}pre[class*='language-'].line-numbers{padding-left:0}pre[class*='language-'].line-numbers code{padding-left:3.8em}pre[class*='language-'].line-numbers .line-numbers-rows{left:0}pre[class*='language-'][data-line]{padding-top:0;padding-bottom:0;padding-left:0}pre[data-line] code{position:relative;padding-left:4em}pre .line-highlight{margin-top:0}pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}pre.line-numbers > code{position:relative}.line-numbers .line-numbers-rows{font-size:100%;position:absolute;top:0;left:-3.8em;width:3em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;letter-spacing:-1px;pointer-events:none;border-right:1px solid #999}.line-numbers-rows > span{display:block;counter-increment:linenumber;pointer-events:none}.line-numbers-rows > span:before{display:block;padding-right:.8em;content:counter(linenumber);text-align:right;color:#999}
+/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+apacheconf+bash+batch+coffeescript+ruby+elixir+erlang+git+go+haml+handlebars+http+ini+json+less+markdown+nginx+php+php-extras+powershell+python+sass+scss+smarty+sql+twig+vim+yaml */
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+

@@ -5,31 +5,27 @@
     <header class="post-header">
       {{#if featured}}
         <div class="post-header-featured">
-          <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+          <h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
 
           <div class="featured-label">
             <span class="icon-featured"></span>
           </div>
         </div>
       {{else}}
-        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-      {{/if}}
-      <p class="post-meta">
-        <time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="MMMM DD, YYYY"}}</time>
-        {{tags prefix="in "}}
-      </p>
-      {{#if feature_image}}
-        <section class="featured-image">
-          <a href="{{url}}">
-            <img src="{{img_url feature_image}}" alt="{{title}}">
-          </a>
-        </section>
+        <h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
       {{/if}}
     </header>
 
     <section class="post-content">
       <p>{{excerpt words="86"}}</p>
-      <p><a href="{{url}}" class="more-link">Read more</a></p>
+      <div class="post-meta">
+        <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD-MM-YYYY"}}</time>
+        <span class="tags">
+          {{#foreach tags}}
+            <a href="{{url}}">#{{name}}</a>
+          {{/foreach}}
+        </span>
+      </div>
     </section>
 
   </article>

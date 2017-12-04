@@ -1,10 +1,11 @@
 <header class="site-header">
   <div class="float-left">
-    {{#if @blog.logo}}
-      <h1 class="site-title"><a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a></h1>
-    {{else}}
+    {{#is "index"}}
       <h1 class="site-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-    {{/if}}
+    {{/is}}
+    {{#is "post"}}
+      <span class="site-title"><a href="{{@blog.url}}">{{@blog.title}}</a></span>
+    {{/is}}
   </div>
 
   <div class="float-right">

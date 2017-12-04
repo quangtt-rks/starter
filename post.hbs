@@ -8,16 +8,15 @@
 
     <article class="{{post_class}}">
       <header class="post-header">
-        <h2>{{title}}</h2>
-        <p>
-          <time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="MMMM DD, YYYY"}}</time>
-          {{tags prefix="in "}}
-        </p>
-        {{#if feature_image}}
-          <section class="featured-image">
-            <img src="{{img_url feature_image}}" alt="{{title}}">
-          </section>
-        {{/if}}
+        <h1>{{title}}</h1>
+        <div class="post-meta">
+          <time datetime="{{date format='YYYY-MM-DD'}}"><b>Published:</b> {{date format="YYYY-MM-DD H:mm"}}</time>
+          <div class="tags">
+            {{#foreach tags}}
+                <a href="{{url}}">#{{name}}</a>
+            {{/foreach}}
+          </div>
+        </div>
       </header>
 
       <section class="post-content">
@@ -29,21 +28,21 @@
       <div class="row">
 
         <div class="column">
-          {{#next_post}}
-            <div class="next">
-              <p>Next story</p>
-              <h3><a href="{{url}}">{{title}}</a></h3>
-            </div>
-          {{/next_post}}
-        </div>
-
-        <div class="column">
           {{#prev_post}}
             <div class="prev">
               <p>Previous story</p>
               <h3><a href="{{url}}">{{title}}</a></h3>
             </div>
           {{/prev_post}}
+        </div>
+
+        <div class="column">
+          {{#next_post}}
+            <div class="next">
+              <p>Next story</p>
+              <h3><a href="{{url}}">{{title}}</a></h3>
+            </div>
+          {{/next_post}}
         </div>
 
       </div>
