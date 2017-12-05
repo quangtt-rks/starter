@@ -97,6 +97,9 @@ pre > code {
 .site-footer:after {
   clear: both;
 }
+.site-footer .copyright .description {
+  font-size: 1.3rem;
+}
 @media screen and (min-width: 480px) {
   .site-footer {
     text-align: left;
