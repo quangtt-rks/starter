@@ -69,7 +69,7 @@ function extractDomain(url) {
 }
 
 // Creates Captions from Alt tags
-$(".post-content img").each(function() {
+$(".post-content img, .entry-content img").each(function() {
   // Let's put a caption if there is one
   if ($(this).attr("alt")) {
     $(this).wrap(
