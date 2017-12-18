@@ -50,6 +50,26 @@
 
     {{> widget-share}}
 
+    {{!-- Everything inside the #author tags pulls data from the author --}}
+    {{#author}}
+      <section class="post-author">
+        {{#if profile_image}}
+          <a class="author-image" href="{{url}}" style="background-image: url({{img_url profile_image}})"><span class="hidden">{{name}}'s Picture</span></a>
+        {{/if}}
+
+        <div class="author-data">
+          <h4>Written by <a href="{{url}}">{{name}}</a></h4>
+
+          {{#if bio}}
+            <p>{{bio}}</p>
+          {{else}}
+            <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+          {{/if}}
+        </div>
+
+      </section>
+    {{/author}}
+
     {{! The tag below includes comments - partials/comments.hbs }}
     {{> comments}}
 
