@@ -1,6 +1,19 @@
 <footer class="site-footer">
   <div class="copyright">
-    &copy; <a href="{{@blog.url}}">{{@blog.title}}</a> {{date format="YYYY"}}.
-      <div class="description">Blog này được xây dựng trên <a href="https://ghost.org">Ghost</a> The blogging platform.</div>
+    &copy; <a href="{{@blog.url}}">{{@blog.title}}</a> {{date format="YYYY"}}
+      &nbsp;|&nbsp;
+      <div class="footer-navigation">
+          <ul>
+              <li><a href="{{@blog.url}}/about-quang-teo">Về tác giả</a></li>
+              <li>
+                  {{#if @labs.subscribers}}
+                      <a class="subscribe" href="{{@blog.url}}/subscribe/">Subscribe</a>
+                  {{else}}
+                      <a class="subscribe" href="{{@blog.url}}/rss/" target="_blank">RSS</a>
+                  {{/if}}
+              </li>
+          </ul>
+      </div>
+      <div class="description">Blog này được xây dựng trên <a href="https://ghost.org">Ghost</a> The professional publishing platform</div>
   </div>
 </footer>
