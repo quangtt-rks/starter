@@ -71,8 +71,10 @@ code {
   margin: 0 .2rem;
   padding: .2rem .5rem;
   font-size: 90%;
-  white-space: nowrap;
-  background: rgba(0, 0, 0, 0.20);
+  white-space: normal;
+  color: #d72b3f;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
   border-radius: 3px;
 }
 
