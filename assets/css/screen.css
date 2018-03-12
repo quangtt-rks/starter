@@ -84,6 +84,7 @@ pre > code {
   white-space: pre;
   background: transparent;
   border-radius: 0;
+  border: none;
 }
 
 .site-footer {
