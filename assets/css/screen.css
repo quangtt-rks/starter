@@ -1766,3 +1766,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 .footer-navigation ul li a:hover {
     color: #0081EF;
 }
+
+/* Ghost 2.0 Prepare */
+.kg-width-wide { border: none }
+.kg-width-full { border: none }
