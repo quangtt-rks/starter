@@ -99,6 +99,7 @@ pre > code {
 }
 .site-footer .copyright .description {
   font-size: 1.3rem;
+  margin-top: 5px;
 }
 @media screen and (min-width: 480px) {
   .site-footer {
@@ -1741,4 +1742,24 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
     position: absolute;
     top: 7px;
     left: 7px;
+}
+.footer-navigation {
+    display: inline-block;
+    vertical-align: bottom;
+}
+.footer-navigation ul {
+    list-style: none;
+}
+.footer-navigation ul li {
+    float: left;
+    margin: 0 9px 0 0;
+}
+.footer-navigation ul li:last-child {
+    margin: 0;
+}
+.footer-navigation ul li a {
+    color: #66727D;
+}
+.footer-navigation ul li a:hover {
+    color: #0081EF;
 }
