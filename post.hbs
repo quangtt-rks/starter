@@ -51,7 +51,7 @@
     {{> widget-share}}
 
     {{!-- Everything inside the #author tags pulls data from the author --}}
-    {{#author}}
+    {{#primary_author}}
       <section class="post-author">
         {{#if profile_image}}
           <a class="author-image" href="{{url}}" style="background-image: url({{img_url profile_image}})"><span class="hidden">{{name}}'s Picture</span></a>
@@ -68,7 +68,7 @@
         </div>
 
       </section>
-    {{/author}}
+    {{/primary_author}}
 
     {{! The tag below includes comments - partials/comments.hbs }}
     {{> comments}}
