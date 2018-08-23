@@ -1,36 +1,34 @@
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
-  {{^has tag="TIL"}}
-    <article class="{{post_class}} wow fadeIn" data-wow-duration=".8s">
+  <article class="{{post_class}} wow fadeIn" data-wow-duration=".8s">
 
-      <header class="post-header">
-        {{#if featured}}
-          <div class="post-header-featured">
-            <h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
-
-            <div class="featured-label">
-              <span class="icon-featured"></span>
-            </div>
-          </div>
-        {{else}}
+    <header class="post-header">
+      {{#if featured}}
+        <div class="post-header-featured">
           <h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
-        {{/if}}
-      </header>
 
-      <section class="post-content">
-        <p>{{excerpt words="86"}}</p>
-        <div class="post-meta">
-          <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD-MM-YYYY"}}</time>
-          <span class="tags">
-            {{#foreach tags}}
-              <a href="{{url}}">#{{name}}</a>
-            {{/foreach}}
-          </span>
+          <div class="featured-label">
+            <span class="icon-featured"></span>
+          </div>
         </div>
-      </section>
+      {{else}}
+        <h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
+      {{/if}}
+    </header>
 
-    </article>
-  {{/has}}
+    <section class="post-content">
+      <p>{{excerpt words="86"}}</p>
+      <div class="post-meta">
+        <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD-MM-YYYY"}}</time>
+        <span class="tags">
+          {{#foreach tags}}
+            <a href="{{url}}">#{{name}}</a>
+          {{/foreach}}
+        </span>
+      </div>
+    </section>
+
+  </article>
 {{/foreach}}
 
 {{! Previous/next page links - displayed on every page }}
