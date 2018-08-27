@@ -5,7 +5,7 @@ Special Thanks to [byfortress](http://byfortress.com/downloads/starter). His the
 
 ## Features
 
-- Compatible with Ghost >= 1.0
+- Compatible with Ghost >= 1.0 (now >= 2.0 but no big change, I'm planning on it)
 - Fully responsive
 - Retina ready
 - Multiple author support
