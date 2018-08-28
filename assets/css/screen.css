@@ -12,6 +12,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 *,
@@ -1714,10 +1715,6 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 }
 
 
-.post .post-content figure, .post .entry-content figure {
-  margin-left: auto;
-  margin-right: auto;.
-}
 .post .post-content figure.image, .post .entry-content figure.image {
   text-align: center;
 }
@@ -1729,7 +1726,6 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 
   z-index: 300;
 
-  max-width: 800px;
   margin-top: 5px;
 
   text-align: center;
@@ -1766,7 +1762,21 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 .footer-navigation ul li a:hover {
     color: #0081EF;
 }
-
-/* Ghost 2.0 Prepare */
-.kg-width-wide { border: none }
-.kg-width-full { border: none }
+.kg-image-card {
+    margin-left: auto;
+    margin-right: auto;
+}
+.kg-width-wide {
+    position: relative;
+    width: 60vw;
+    margin: auto calc(50% - 50vw);
+    transform: translateX(calc(50vw - 50%));
+}
+.kg-width-full {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
