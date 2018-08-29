@@ -1,31 +1,21 @@
 # starter
 A minimal, clean, modern theme for Ghost blog.
 
-Special Thanks to [byfortress](http://byfortress.com/downloads/starter). His theme can be download for free but you can buy him a beer [here](https://creativemarket.com/lucas_delrio/1069273-Starter-Free-Ghost-Theme). Actually I bought it before he switched it to free =]]
+*Special Thanks to [byfortress](http://byfortress.com/downloads/starter). His theme can be download for free but you can buy him a beer [here](https://creativemarket.com/lucas_delrio/1069273-Starter-Free-Ghost-Theme). Actually I bought it before he switched it to free =]]*
 
 ## Features
 
 - Compatible with Ghost >= 2.0
 - Fully responsive
 - Retina ready
+- Google Fonts
 - Multiple author support
 - Disqus comments
 - Featured posts
-
-### Added features
-
 - Google Analytics
 - Code syntax highlight with Prism
-- Auto-caption images
 
-### Removed/modified features:
-
-- [Removed] Featured images (home page and specific post)
-- [Changed] Background color (from white to #FAFAFA)
-- [Changed] Font to Google Fonts ([Athiti](https://fonts.google.com/specimen/Athiti))
-- [Changed] Shrink size of blog title and post title
-
-Sorry for some texts in theme are in Vietnamese. You can change it later :)
+Some texts in theme are in Vietnamese. You can change it later :)
 
 ## Configuration
 
