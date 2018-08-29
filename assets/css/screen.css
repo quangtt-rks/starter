@@ -1781,6 +1781,11 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
     margin-left: -50vw;
     margin-right: -50vw;
 }
+.kg-embed-card {
+    width: 100%;
+    margin: auto calc(50% - 50vw);
+    transform: translateX(calc(50vw - 50%));
+}
 
 @media screen and (min-width: 60rem) {
     .kg-width-wide {
