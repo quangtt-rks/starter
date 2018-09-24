@@ -24,6 +24,8 @@ Make sure you modify all my personal stuff, such as:
 - Disqus shortname (`index.js`)
 - Google Analytics (`default.hbs`)
 
+Please refer to [Wiki](https://github.com/quangtt/starter/wiki) for more details.
+
 ## Preview
 You can see it live on my [blog](https://quangteomedia.com).
 
