@@ -1,3 +1,6 @@
+[![starter version](https://img.shields.io/badge/release-v1.1.2-blue.svg)](https://github.com/quangtt/starter/releases)
+[![ghost version](https://img.shields.io/badge/ghost-v2.1-brightgreen.svg)](https://github.com/TryGhost/Ghost/releases)
+
 # starter
 A minimal, clean, modern theme for Ghost blog.
 
