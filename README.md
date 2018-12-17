@@ -32,8 +32,34 @@ Please refer to [Wiki](https://github.com/quangtt/starter/wiki) for more details
 ## Preview
 You can see it live on my [blog](https://quangteomedia.com).
 
-![Desktop view](https://i.imgur.com/vEZYfcm.jpg)
+### Desktop
 
-![Single post](https://i.imgur.com/bYS1wpJ.jpg)
+> *Home Page*
 
-![Mobile view](https://i.imgur.com/yOnKMbQ.jpg)
+![Home page](https://i.imgur.com/KuT5iRi.jpg)
+
+> *Single-post Page*
+
+![Single-post page](https://i.imgur.com/L54wLsU.jpg)
+
+> *Support Ghost v2 Gallery!*
+
+![Support Ghost v2 Gallery!](https://i.imgur.com/UZ11d7x.jpg)
+
+### Smartphone
+
+> *Home Page*
+
+![Home page](https://i.imgur.com/c59axzp.jpg)
+
+> *Single-post Page (with image)*
+
+![Single-post page](https://i.imgur.com/s7bisSc.jpg)
+
+> *Single-post Page*
+
+![Single-post page](https://i.imgur.com/ckDcg16.jpg)
+
+> *Main Menu*
+
+![Main menu](https://i.imgur.com/ize1xBh.gif)
