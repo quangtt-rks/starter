@@ -9,6 +9,7 @@ A minimal, clean, modern theme for Ghost blog.
 ## Features
 
 - Compatible with Ghost >= 2.0
+- Ghost v2 Translation & Localization ([#9](https://github.com/quangtt/starter/issues/9) WIP)
 - Fully responsive
 - Retina ready
 - Google Fonts
