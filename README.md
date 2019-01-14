@@ -1,5 +1,5 @@
-[![starter version](https://img.shields.io/badge/release-v1.1.3-blue.svg)](https://github.com/quangtt/starter/releases)
-[![ghost version](https://img.shields.io/badge/ghost-v2.1-brightgreen.svg)](https://github.com/TryGhost/Ghost/releases)
+[![starter version](https://img.shields.io/badge/release-v1.1.4-blue.svg)](https://github.com/quangtt/starter/releases)
+[![ghost version](https://img.shields.io/badge/ghost-v2.10.0-brightgreen.svg)](https://github.com/TryGhost/Ghost/releases)
 
 # starter
 A minimal, clean, modern theme for Ghost blog.
@@ -8,7 +8,7 @@ A minimal, clean, modern theme for Ghost blog.
 
 ## Features
 
-- Compatible with Ghost >= 2.0
+- Compatible with Ghost >= 2.10.0
 - Ghost v2 Translation & Localization ([#9](https://github.com/quangtt/starter/issues/9) WIP)
 - Fully responsive
 - Retina ready
@@ -18,6 +18,9 @@ A minimal, clean, modern theme for Ghost blog.
 - Featured posts
 - Google Analytics
 - Code syntax highlight with Prism
+
+#### Work In Process
+- Ghost v2 Translation & Localization ([#9](https://github.com/quangtt/starter/issues/9))
 
 Some texts in theme are in Vietnamese. You can change it later :)
 
