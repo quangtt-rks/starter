@@ -2,7 +2,7 @@ $(document).ready(function(){
   // Responsive videos
   // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-  $(".site-main").fitVids();
+  $(".post-content").fitVids();
 
   // Navigation toggle
   // ––––––––––––––––––––––––––––––––––––––––––––––––––
