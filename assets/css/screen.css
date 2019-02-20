@@ -1639,6 +1639,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 }
 .post-author h4 {
   font-size: 2.2rem;
+  text-transform: none;
 }
 .post-author p {
   margin-bottom: 0;

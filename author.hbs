@@ -2,7 +2,7 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 {{! The main content area on the homepage }}
-<main class="site-main wow fadeIn" data-wow-duration=".8s" role="main">
+<main class="site-main" role="main">
 
   {{! Everything inside the #author tags pulls data from the author }}
   {{#author}}
@@ -10,7 +10,7 @@
     <section class="site-hero {{#if cover_image}}" style="background-image: url({{cover_image}}){{else}}site-hero-no-cover{{/if}}">
       <header class="site-hero-header">
         {{#if feature_image}}
-          <div class="author-image" style="background-image: url({{img_url feature_image}})">{{name}}'s Picture</div>
+          <div class="author-image" style="background-image: url({{img_url feature_image}})">{{t "{name}'s Picture" name=name}}</div>
         {{/if}}
         <h2 class="site-hero-title">{{name}}</h2>
         {{#if bio}}
@@ -24,7 +24,7 @@
           {{#if location}}
             <p class="author-location"><span class="icon-location"></span>{{location}}</p>
           {{/if}}
-          <p class="author-stats"><span class="icon-posts"></span>{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</p>
+          <p class="author-stats"><span class="icon-posts"></span>{{plural ../pagination.total empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}</p>
         </div>
 
       </header>

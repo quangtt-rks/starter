@@ -1,0 +1,20 @@
+{
+  "Previous story": "前の記事",
+  "Next story": "次の記事",
+  "Published": "公開日時",
+  "Hi there!": "こんにちは！",
+  "{name}'s Picture": "{name}の写真",
+  "Subscribe": "購読",
+  "Proudly published with {ghost_link}": "誇らしげに{ghost_link}で公開",
+  "Back": "戻る",
+  "Next": "次る",
+  "No posts": "記事はありません",
+  "1 post": "1記事",
+  "% posts": "%記事",
+  "posts": "記事",
+  "Subscribe to {site_title}": "{site_title}を購読する",
+  "Your email address": "メールアドレス",
+  "Subscribed!": "購読しました！",
+  "Subscribed to {site_title} with {sub_email}": "正常にメールアドレス<strong>{sub_email}</strong>で<strong>{site_title}</strong>を購読しました。",
+  "Author": "著者:"
+}

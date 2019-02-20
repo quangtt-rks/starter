@@ -1,0 +1,20 @@
+{
+  "Previous story": "Previous story",
+  "Next story": "Next story",
+  "Published": "Published",
+  "Hi there!": "Hi there!",
+  "{name}'s Picture": "{name}'s Picture",
+  "Subscribe": "Subscribe",
+  "Proudly published with {ghost_link}": "Proudly published with {ghost_link}",
+  "Back": "Back",
+  "Next": "Next",
+  "No posts": "No posts",
+  "1 post": "1 post",
+  "% posts": "% posts",
+  "posts": "posts",
+  "Subscribe to {site_title}": "Subscribe to {site_title}",
+  "Your email address": "Your email address",
+  "Subscribed!": "Subscribed!",
+  "Subscribed to {site_title} with {sub_email}": "You've successfully subscribed to <strong>{site_title}</strong> with the email address <strong>{sub_email}</strong>.",
+  "Author": "Author:"
+}

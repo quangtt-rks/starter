@@ -2,7 +2,7 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 {{! The main content area on the homepage }}
-<main class="site-main wow fadeIn" data-wow-duration=".8s" role="main">
+<main class="site-main" role="main">
 
   {{! Everything inside the #tag tags pulls data from the tag }}
   {{#tag}}
@@ -14,7 +14,7 @@
           {{#if description}}
             {{description}}
           {{else}}
-            {{../pagination.total}} bài viết
+              {{plural ../pagination.total empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}
           {{/if}}
         </p>
       </header>
