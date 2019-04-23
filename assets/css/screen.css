@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Athiti";
-  font-display: auto;
+  font-display: block;
   font-style: normal;
   font-weight: normal;
   src: local('Athiti'), url('/assets/fonts/Athiti-Regular.ttf') format('truetype');
