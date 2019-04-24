@@ -1,10 +1,12 @@
-[![starter version](https://img.shields.io/badge/release-v1.1.6-blue.svg)](https://github.com/quangtt/starter/releases)
+[![starter version](https://img.shields.io/badge/release-v1.1.7-blue.svg)](https://github.com/quangtt/starter/releases)
 [![ghost version](https://img.shields.io/badge/ghost-v2.10.0-brightgreen.svg)](https://github.com/TryGhost/Ghost/releases)
 
 # starter
 A minimal, clean, modern theme for Ghost blog.
 
-*Special Thanks to [byfortress](http://byfortress.com/downloads/starter). His theme can be download for free but you can buy him a beer [here](https://creativemarket.com/lucas_delrio/1069273-Starter-Free-Ghost-Theme). Actually I bought it before he switched it to free =]]*
+*Special Thanks to [byfortress](http://byfortress.com/downloads/starter). ~~His theme can be download for free but you can buy him a beer [here](https://creativemarket.com/lucas_delrio/1069273-Starter-Free-Ghost-Theme).~~ Actually I bought it before he switched it to free =]]*
+
+*Just found out he discontinued maintaining his themes, I'll keep this theme alive as long as possible as a BIG THANK for him!*
 
 ## Features
 
@@ -12,7 +14,7 @@ A minimal, clean, modern theme for Ghost blog.
 - Ghost v2 Translation & Localization ([#9](https://github.com/quangtt/starter/issues/9))
 - Fully responsive
 - Retina ready
-- Google Fonts
+- Athiti Google Fonts (Now use downloaded version)
 - Multiple author support
 - Disqus comments
 - Featured posts
