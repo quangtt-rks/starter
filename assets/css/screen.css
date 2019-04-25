@@ -1746,6 +1746,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 
 .icon-featured {
     position: relative;
+    display: block;
 }
 .icon-featured:before {
     position: absolute;
