@@ -1,4 +1,4 @@
-[![starter version](https://img.shields.io/badge/release-v1.1.7-blue.svg)](https://github.com/quangtt/starter/releases)
+[![starter version](https://img.shields.io/badge/dynamic/json.svg?color=blue&label=release&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fquangtt%2Fstarter%2Fmaster%2Fpackage.json)](https://github.com/quangtt/starter/releases)
 [![ghost version](https://img.shields.io/badge/ghost-v2.10.0-brightgreen.svg)](https://github.com/TryGhost/Ghost/releases)
 
 # starter
