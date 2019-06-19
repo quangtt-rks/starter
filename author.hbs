@@ -1,10 +1,10 @@
 {{!< default}}
-{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
 
-{{! The main content area on the homepage }}
+{{!-- The main content area on the homepage --}}
 <main class="site-main" role="main">
 
-  {{! Everything inside the #author tags pulls data from the author }}
+  {{!-- Everything inside the #author tags pulls data from the author --}}
   {{#author}}
 
     <section class="site-hero {{#if cover_image}}" style="background-image: url({{cover_image}}){{else}}site-hero-no-cover{{/if}}">
@@ -33,6 +33,6 @@
 
   {{/author}}
 
-  {{! The tag below includes the post loop - partials/loop-alt.hbs }}
+  {{!-- The tag below includes the post loop - partials/loop-alt.hbs --}}
   {{> "loop"}}
 </main>

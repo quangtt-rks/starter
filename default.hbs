@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{@site.lang}}">
 <head>
-  {{! Document Settings }}
+  {{!-- Document Settings --}}
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- {{! Page Meta }} -->
+  {{!-- Page Meta --}}
   <title>{{meta_title}}</title>
 
   <meta name="HandheldFriendly" content="True" />
@@ -13,10 +13,10 @@
 
   <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
-  <!-- {{! Styles'n'Scripts }} -->
+  {{!-- Styles'n'Scripts --}}
   <link rel="stylesheet" type="text/css" href="{{asset "css/min/screen.min.css"}}" />
 
-  {{! Google Analytics }}
+  {{!-- Google Analytics --}}
   <script>
     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
     ga('create', 'UA-66599377-1', 'auto');
@@ -24,7 +24,7 @@
   </script>
   <script async src='https://www.google-analytics.com/analytics.js'></script>
 
-  {{! Ghost outputs important style and meta data with this tag }}
+  {{!-- Ghost outputs important style and meta data with this tag --}}
   {{ghost_head}}
 </head>
 <body class="{{body_class}}">
@@ -33,7 +33,7 @@
 
     {{> "header"}}
 
-    {{! Everything else gets inserted here }}
+    {{!-- Everything else gets inserted here --}}
     {{{body}}}
 
     {{> "footer"}}
@@ -42,10 +42,10 @@
 
   {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  {{! Ghost outputs important scripts and data with this tag }}
+  {{!-- Ghost outputs important scripts and data with this tag --}}
   {{ghost_foot}}
 
-  {{! The main JavaScript file for Blacklist }}
+  {{!-- The main JavaScript file for Blacklist --}}
   <script type="text/javascript" src="{{asset "js/min/index.min.js"}}"></script>
 
   <script>
@@ -62,7 +62,7 @@
   {{#is "post"}}
     <script type="text/javascript">
       if ( typeof disqus_shortname !== 'undefined' ) {
-        /* --- Don't edit below this line --- */
+        {{!-- Don't edit below this line --}}
         (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';

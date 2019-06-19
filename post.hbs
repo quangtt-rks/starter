@@ -1,9 +1,9 @@
 {{!< default}}
-{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
 
 <main class="site-main" role="main">
 
-  {{! Everything inside the #post tags pulls data from the post }}
+  {{!-- Everything inside the #post tags pulls data from the post --}}
   {{#post}}
 
     <article class="{{post_class}}">
@@ -70,7 +70,7 @@
       </section>
     {{/primary_author}}
 
-    {{! The tag below includes comments - partials/comments.hbs }}
+    {{!-- The tag below includes comments - partials/comments.hbs --}}
     {{> comments}}
 
   {{/post}}
