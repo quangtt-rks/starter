@@ -1,0 +1,20 @@
+{
+    "Previous story": "上一篇文章",
+    "Next story": "下一篇文章",
+    "Published": "发布日期",
+    "Hi there!": "嗨！",
+    "{name}'s Picture": "{name} 的照片",
+    "Subscribe": "订阅",
+    "Proudly published with {ghost_link}": "骄傲的使用 {ghost_link} 创作",
+    "Back": "上一页",
+    "Next": "下一页",
+    "No posts": "没有文章",
+    "1 post": "1 篇文章",
+    "% posts": "% 篇文章",
+    "posts": "文章",
+    "Subscribe to {site_title}": "订阅 {site_title}",
+    "Your email address": "你的邮箱地址",
+    "Subscribed!": "成功订阅！",
+    "Subscribed to {site_title} with {sub_email}": "成功通过 <strong>{sub_email}</strong> 订阅 <strong>{site_title}</strong>。",
+    "Author": "作者："
+  }
