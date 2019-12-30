@@ -1305,6 +1305,9 @@ mark,
 .share-item.google-plus:hover a {
   background-color: #DC4E41;
 }
+.share-item.reddit:hover a {
+  background-color: #FF4500;
+}
 
 .social-navigation ul {
   display: -webkit-box;
