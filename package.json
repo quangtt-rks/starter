@@ -1,13 +1,16 @@
 {
   "name": "starter",
   "version": "1.1.9",
+  "engines": {
+    "ghost-api": "v3"
+  },
   "author": {
     "name": "ByFortress",
     "email": "hello@byfortress.com",
     "url": "https://byfortress.com"
   },
   "config": {
-    "posts_per_page": 8
+    "posts_per_page": 10
   },
   "devDependencies": {
     "del": "^0.1.1",
@@ -21,6 +24,7 @@
   "keywords": [
     "ghost",
     "theme",
-    "ghost-theme"
+    "ghost-theme",
+    "starter"
   ]
 }
