@@ -10,7 +10,7 @@ A minimal, clean, modern theme for Ghost blog.
 
 ## Features
 
-- Compatible with Ghost >= 2.10.0
+- Compatible with Ghost v3
 - Ghost v2 Translation & Localization ([#9](https://github.com/quangtt/starter/issues/9))
   - Vietnamese
   - English
@@ -41,31 +41,30 @@ You can see it live on my [blog](https://quangteomedia.com).
 ### Desktop
 
 > *Home Page*
-
-![Home page](https://i.imgur.com/KuT5iRi.jpg)
+> ![Home page](https://i.imgur.com/KuT5iRi.jpg)
 
 > *Single-post Page*
-
-![Single-post page](https://i.imgur.com/L54wLsU.jpg)
+> ![Single-post page](https://i.imgur.com/L54wLsU.jpg)
 
 > *Support Ghost v2 Gallery!*
+> ![Support Ghost v2 Gallery!](https://i.imgur.com/UZ11d7x.jpg)
 
-![Support Ghost v2 Gallery!](https://i.imgur.com/UZ11d7x.jpg)
+> *Support Ghost v3 Bookmark! Yay!*
+> ![Support Ghost v3 Bookmark!](https://i.imgur.com/o04Cr4b.jpg)
 
 ### Smartphone
 
 > *Home Page*
-
-![Home page](https://i.imgur.com/c59axzp.jpg)
+> ![Home page](https://i.imgur.com/c59axzp.jpg)
 
 > *Single-post Page (with image)*
-
-![Single-post page](https://i.imgur.com/s7bisSc.jpg)
+> ![Single-post page](https://i.imgur.com/s7bisSc.jpg)
 
 > *Single-post Page*
+> ![Single-post page](https://i.imgur.com/ckDcg16.jpg)
 
-![Single-post page](https://i.imgur.com/ckDcg16.jpg)
+> *Bookmark Card!*
+> ![Bookmark Card](https://i.imgur.com/CTGoTIA.jpg)
 
 > *Main Menu*
-
-![Main menu](https://i.imgur.com/ize1xBh.gif)
+> ![Main menu](https://i.imgur.com/ize1xBh.gif)
