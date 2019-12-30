@@ -1,6 +1,6 @@
 {
   "name": "starter",
-  "version": "1.1.9",
+  "version": "1.2.0",
   "engines": {
     "ghost-api": "v3"
   },
