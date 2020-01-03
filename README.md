@@ -12,10 +12,10 @@ A minimal, clean, modern theme for Ghost blog.
 
 - Compatible with Ghost v3
 - Ghost v2 Translation & Localization ([#9](https://github.com/quangtt/starter/issues/9))
-  - Vietnamese
-  - English
-  - Japanese
-  - Chinese Simplified
+  - Vietnamese (vi)
+  - English (en)
+  - Japanese (ja)
+  - Chinese Simplified (zh_hans)
 - Fully responsive
 - Retina ready
 - Athiti Google Fonts (Now use downloaded version)

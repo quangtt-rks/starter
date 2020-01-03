@@ -20,6 +20,7 @@
       <p>{{excerpt words="86"}}</p>
       <div class="post-meta">
         <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD-MM-YYYY"}}</time>
+        <span class="reading-time"><span class="bull">&bull;</span> {{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</span>
         <span class="tags">
           {{#foreach tags}}
             <a href="{{url}}">#{{name}}</a>

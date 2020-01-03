@@ -11,6 +11,7 @@
         <h1>{{title}}</h1>
         <div class="post-meta">
           <time datetime="{{date format='YYYY-MM-DD'}}"><b>{{t "Published"}}: </b> {{date format="YYYY-MM-DD H:mm"}}</time>
+          <span class="reading-time"><span class="bull">&bull;</span> {{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</span>
           <div class="tags">
             {{#foreach tags}}
                 <a href="{{url}}">#{{name}}</a>
