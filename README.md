@@ -1,5 +1,5 @@
 [![starter version](https://img.shields.io/badge/dynamic/json.svg?color=blue&label=release&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fquangtt%2Fstarter%2Fmaster%2Fpackage.json)](https://github.com/quangtt/starter/releases)
-[![ghost version](https://img.shields.io/badge/ghost-v3.2.0-brightgreen.svg)](https://github.com/TryGhost/Ghost/releases)
+[![ghost version](https://img.shields.io/badge/ghost-v4.0.0-brightgreen.svg)](https://github.com/TryGhost/Ghost/releases)
 
 # starter
 A minimal, clean, modern theme for Ghost blog.
