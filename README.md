@@ -39,7 +39,7 @@ Please refer to [Wiki](https://github.com/quangtt/starter/wiki) for more details
 You can see it live on my [blog](https://quangteomedia.com).
 
 ## Buy me a coffee!
-[![Buy me a coffee](https://img.buymeacoffee.com/api/?url=aHR0cHM6Ly9jZG4uYnV5bWVhY29mZmVlLmNvbS91cGxvYWRzL3Byb2ZpbGVfcGljdHVyZXMvMjAyMi8wMS9kQWNBZ1ZCZEUwV1ZUOTBLLmpwZ0AzMDB3XzBlLndlYnA=&creator=Quang+Tran&design_code=1&design_color=%23ff813f&slug=quangtt)](https://www.buymeacoffee.com/quangtt)
+[![Buy me a coffee](https://img.buymeacoffee.com/api/?url=aHR0cHM6Ly9jZG4uYnV5bWVhY29mZmVlLmNvbS91cGxvYWRzL3Byb2ZpbGVfcGljdHVyZXMvMjAyMi8wMS9kQWNBZ1ZCZEUwV1ZUOTBLLmpwZ0AzMDB3XzBlLndlYnA=&creator=Quang+Tran&design_code=1&design_color=%235F7FFF&slug=quangtt)](https://www.buymeacoffee.com/quangtt)
 
 ### Desktop
 
