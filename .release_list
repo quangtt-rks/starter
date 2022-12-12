@@ -1,6 +1,5 @@
 .gitignore
 .release_list
-miss.txt
 assets
 assets/css
 assets/css/min
