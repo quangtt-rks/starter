@@ -1,5 +1,6 @@
 .gitignore
 .release_list
+haha.txt
 assets
 assets/css
 assets/css/min
